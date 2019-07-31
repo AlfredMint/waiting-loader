@@ -1,0 +1,96 @@
+
+.overlay {
+    position: fixed;
+    z-index: 999;
+    top: -25%;
+    bottom: 0;
+    right: 0;
+    height: 125%;
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+    color:#fff;
+    margin: 0;
+}
+.overlay-content{
+    margin-top:30rem;   
+}
+
+/*ANIMACION INICIO.... BORRAR SI NO SE UTILIZA*/
+
+.animacion-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .animacion-div .square {
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(70deg);
+    background: #51b8e2;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    transition: background 100ms linear;
+    -webkit-animation: change 950ms linear infinite;
+            animation: change 950ms linear infinite;
+  }
+  .animacion-div .square:nth-child(1) {
+    -webkit-animation-delay: 100ms;
+            animation-delay: 100ms;
+  }
+  .animacion-div .square:nth-child(2) {
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .animacion-div .square:nth-child(3) {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+  }
+  .animacion-div .square:nth-child(4) {
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .animacion-div .square:nth-child(5) {
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+  }
+  @-webkit-keyframes change {
+    0% {
+      border-radius: 4px;
+    }
+    17.5% {
+      border-radius: 4px;
+    }
+    50% {
+      border-radius: 100%;
+      background: rgba(255,255,255,0.4);
+    }
+    93.5% {
+      border-radius: 4px;
+    }
+    100% {
+      border-radius: 4px;
+    }
+  }
+  @keyframes change {
+    0% {
+      border-radius: 4px;
+    }
+    17.5% {
+      border-radius: 4px;
+    }
+    50% {
+      border-radius: 100%;
+      background: rgba(255,255,255,0.4);
+    }
+    93.5% {
+      border-radius: 4px;
+    }
+    100% {
+      border-radius: 4px;
+    }
+  }
+  
+  /*ANIMACION FIN*/
