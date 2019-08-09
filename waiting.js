@@ -6,15 +6,17 @@ $(document).ready(function () {
     /*---------------------------------------
       FUNCIÓN PARA MOSTRAR U OCULTAR WAITING
     ----------------------------------------*/
-    function waiting(on_off) {
-        if (on_off == 0) { //Apaga el waiting
-            $('.overlay').fadeOut('fast');
-                $('body').css({'overflow': 'visible'});
-            
-        } else if (on_off == 1) {//Enciende el waiting
-            $('.overlay').fadeIn('fast');
-            $('body').css({'overflow': 'hidden'});
-        }
-    }
+
 });
 
+function waiting(on_off) {
+    if (on_off == 0) { //Apaga el waiting
+        $('.overlay').fadeOut('fast');
+            $('body').css({'overflow': 'visible'});
+        
+    } else if (on_off == 1) {//Enciende el waiting
+        $('.overlay').removeClass('invisible');
+        $('.overlay').fadeIn('fast');
+        $('body').css({'overflow': 'hidden'});
+    }
+}
